@@ -51,6 +51,12 @@ Do not add a paragraph explaining that one interface is primary, another is equi
 
 Avoid meta-API terms such as `surface`, `promotion`, `importability`, or `compatibility surface` when ordinary API language works.
 
+## Software names and identifiers
+
+Respect the official capitalization of a software project or library in prose. Distinguish the project name from a literal import, distribution, module, or command name when they differ. For example, write `Xarray` for the project in prose and `xarray` for the Python package or import name.
+
+Use code formatting for literal software identifiers, not for software names merely because they refer to code. Functions, classes, methods, modules, package or distribution identifiers, commands, flags, configuration keys, and filenames should normally be formatted as code. Project and library names should normally remain ordinary prose.
+
 ## Keep software abstractions tied to real objects
 
 Terms such as `pipeline`, `framework`, `architecture`, `backend`, `protocol`, `layer`, `contract`, `surface`, and `hierarchy` are useful when they name a real software concept. Do not use them merely to make an implementation description sound systematic.
