@@ -1,0 +1,3 @@
+interface:
+  display_name: "Write Like a Scientist"
+  short_description: "Make agents write more like a scientist, not an AI assistant"

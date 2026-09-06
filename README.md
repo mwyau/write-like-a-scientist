@@ -1,4 +1,4 @@
-# write-like-a-scientist
+# Write Like a Scientist
 
 I got annoyed by agents constantly writing things like “historically,” “intentionally,” “deliberately,” “retained,” and “lineage.” This is my skill for making them write more like a scientist.
 
@@ -12,21 +12,24 @@ There is one skill:
 skills/write-like-a-scientist/
 ├── SKILL.md
 ├── LICENSE.txt
-├── profiles/
-│   └── research-software.md
-└── domains/
-    ├── atmospheric-science.md
-    └── physical-oceanography.md
+├── agents/
+│   └── openai.yaml
+└── references/
+    ├── profile-research-software.md
+    ├── domain-atmospheric-science.md
+    └── domain-physical-oceanography.md
 ```
 
-`SKILL.md` contains the rules that apply broadly. It loads a profile or domain only when the task needs it.
+`SKILL.md` contains the rules that apply broadly. It loads a profile or domain reference only when the task needs it.
 
-- A **profile** describes what is being written. `research-software` covers README text, documentation, docstrings, comments, plans, and other research-software writing.
+- A **profile** describes what is being written. `profile-research-software.md` covers README text, documentation, docstrings, comments, plans, and other research-software writing.
 - A **domain** supplies field-specific terminology and writing conventions. The first two are atmospheric science and physical oceanography.
 
 A scientific-software documentation task may use the core skill, the research-software profile, and one domain. A general scientific explanation may need only the core skill. Unused files should stay out of context.
 
-More profiles can be added later, for example `scientific-paper.md`, without creating another skill.
+More profiles can be added later, for example `profile-scientific-paper.md`, without creating another skill.
+
+`agents/openai.yaml` adds OpenAI-specific interface metadata. The skill itself remains based on `SKILL.md` and the Agent Skills directory format.
 
 ## Reuse
 

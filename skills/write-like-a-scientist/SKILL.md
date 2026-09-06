@@ -2,6 +2,9 @@
 name: write-like-a-scientist
 description: Write or revise scientific and technical text in a direct researcher voice. Use for scientific explanations, research documentation, papers, software documentation, comments, docstrings, plans, reviews, and related text when the writing should preserve scientific terminology and avoid generic agent, marketing, or project-management language. Load only the relevant profile and domain references.
 license: MIT. See LICENSE.txt for complete terms.
+metadata:
+  author: "Albert Yau"
+  repository: "https://github.com/mwyau/write-like-a-scientist"
 ---
 
 # Write like a scientist
@@ -14,15 +17,15 @@ The core rules below always apply. Before writing, decide whether one profile an
 
 ### Profiles
 
-Read `profiles/research-software.md` for README text, user or developer documentation, API descriptions, comments, docstrings, software plans, research-software papers, and other writing about scientific software.
+Read `references/profile-research-software.md` for README text, user or developer documentation, API descriptions, comments, docstrings, software plans, research-software papers, and other writing about scientific software.
 
 Additional profiles may be added later. Do not invent or load a profile that is not present.
 
 ### Domains
 
-Read `domains/atmospheric-science.md` when the subject is atmospheric science, meteorology, climate dynamics, climate modeling, cyclone or storm-track research, atmospheric spherical harmonics, or machine learning in atmospheric and climate science.
+Read `references/domain-atmospheric-science.md` when the subject is atmospheric science, meteorology, climate dynamics, climate modeling, cyclone or storm-track research, atmospheric spherical harmonics, or machine learning in atmospheric and climate science.
 
-Read `domains/physical-oceanography.md` when the subject is physical oceanography, ocean waves, sea level, tides, ocean circulation, coastal dynamics, rotating or stratified fluids, or related geophysical fluid dynamics.
+Read `references/domain-physical-oceanography.md` when the subject is physical oceanography, ocean waves, sea level, tides, ocean circulation, coastal dynamics, rotating or stratified fluids, or related geophysical fluid dynamics.
 
 Read both domain files only when the task genuinely crosses the two fields. Do not read every reference merely because it exists.
 
