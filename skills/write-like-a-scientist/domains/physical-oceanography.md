@@ -12,7 +12,7 @@ Use the quantity or process that the analysis actually describes. Examples inclu
 - tide or tidal signal;
 - current and velocity;
 - seiche;
-- surface, internal, barotropic, and baroclinic modes/waves when those distinctions apply;
+- surface, internal, barotropic, and baroclinic modes or waves when those distinctions apply;
 - rotation and stratification;
 - frequency and wavenumber;
 - phase velocity and group velocity;
@@ -64,4 +64,4 @@ Keep separate:
 - a dynamical interpretation;
 - a causal or forcing claim.
 
-A spectral peak, CEOF mode, phase relationship, or spatial pattern does not by itself prove a dynamical mechanism. Match the strength of the wording to the physical evidence.
+A spectral or modal feature, phase relationship, or spatial pattern does not by itself prove a dynamical mechanism. Match the strength of the wording to the physical evidence.

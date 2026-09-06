@@ -16,7 +16,7 @@ Keep README text easy to scan. Put detailed methods and reference material in th
 
 Prefer positive statements of supported behavior:
 
-> spharmgrid supports full rectangular GL and CC grids.
+> The package supports global rectangular grids.
 
 Mention unsupported behavior when it prevents a likely mistake or defines an important scientific boundary. Do not enumerate absent features merely to make the scope sound controlled.
 
@@ -37,7 +37,7 @@ Use function, class, module, accessor, command, or file names when those are the
 
 Prefer:
 
-> Operations are available through the `.sg` accessor and as functions in `spharmgrid`.
+> Operations are available through the accessor and as functions.
 
 Do not add a paragraph explaining that one interface is primary, another is equivalent, both share a numerical path, or an accessor is thin unless that fact matters to use or interpretation.
 
@@ -76,7 +76,7 @@ Distinguish:
 - a formula from the literature;
 - behavior copied or compared from another implementation;
 - an analytic or numerical test;
-- parity against an identified package/version;
+- parity against an identified implementation;
 - a benchmark;
 - an external scientific validation.
 
@@ -88,7 +88,7 @@ State the comparison and evidence for claims about parity, accuracy, speed, scal
 
 Keep the exact scientific method name. Do not replace a cited method with an approximation while retaining the name.
 
-When a software package supplies numerical machinery for a scientific operation, say so directly rather than implying that the wrapper implements the underlying numerical method itself.
+When a software dependency supplies numerical machinery for a scientific operation, say so directly rather than implying that a wrapper implements the underlying numerical method itself.
 
 Verify literature-derived formulas and terminology against primary scientific sources when practical. Verify bibliographic details against a publisher or another authoritative record.
 
@@ -106,20 +106,20 @@ Avoid:
 
 Prefer:
 
-> Operations are available through the `.sg` accessor and as functions.
+> Operations are available through the accessor and as functions.
 
 Avoid:
 
-> The initial scope is deliberately limited to full rectangular Gauss–Legendre and Clenshaw–Curtis grids, and does not reinterpret arbitrary regular latitude–longitude data.
+> The initial scope is deliberately limited to the supported grid types and does not reinterpret other grids.
 
 Prefer, when sufficient:
 
-> spharmgrid supports full rectangular Gauss–Legendre and Clenshaw–Curtis grids.
+> The package supports the listed grid types.
 
-Add the regular-grid restriction separately only where a user could otherwise supply an invalid grid.
+Add a restriction separately only where a user could otherwise supply invalid input.
 
 Avoid:
 
-> The package provides a robust, modern framework for high-performance atmospheric analysis.
+> The package provides a robust, modern framework for high-performance scientific analysis.
 
 Prefer naming the operations, data model, and measured performance that matter.

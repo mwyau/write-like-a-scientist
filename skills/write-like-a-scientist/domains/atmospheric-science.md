@@ -19,7 +19,6 @@ Keep established quantities and methods when they are what the work actually use
 - anomaly and climatology;
 - spherical harmonic transform (SHT);
 - spectral and triangular truncation;
-- Gauss–Legendre (GL) and Clenshaw–Curtis (CC) grids;
 - cyclic longitude;
 - Eulerian and Lagrangian descriptions when that distinction is scientifically material.
 
@@ -29,30 +28,17 @@ Prefer `climate model` or `GCM` to `simulator` in atmospheric prose unless simul
 
 ## Preserve method names
 
-When applicable to the Yau/Chang storm-track work, preserve:
+Use the terminology of the method or literature actually being discussed. Do not replace an established analysis with a broader or mathematically related label because the broader term sounds more general.
 
-- **Eulerian storm-track metrics/statistics** for gridded synoptic-eddy quantities such as EKE;
-- **Lagrangian cyclone-track statistics** for quantities derived from tracked cyclones;
-- **storm-track activity** and **storm-track variability**;
-- **weather impacts** for associated precipitation and high-wind quantities;
-- **EOF + MLR** when that is the fitted linear method;
-- **CCA coupled patterns** and **canonical variates** for CCA results.
+For cyclone tracking, use the terminology of the named tracking method when reproducing or comparing it rather than inventing generic labels for method-specific quantities.
 
-Do not call EOF + MLR or CCA `reduced-rank regression` unless reduced-rank regression is separately fitted and evaluated.
-
-For cyclone tracking, use the terminology of the named tracking method when reproducing or comparing it. For Hodges/TRACK work, terms such as `objects`, `feature points`, `trajectories`, and the named adaptive constraints are preferable to invented generic labels when they refer to those specific concepts.
+For statistical or machine-learning analyses, keep the name of the method actually fitted or evaluated. If a relationship to another method family matters, explain the relationship without renaming the method.
 
 ## Climate-model generalization
 
-When these are the actual questions, prefer specific phrases such as:
+Name the actual comparison when possible: a climate model, ensemble member, reanalysis, observation set, predictor field, target field, region, or time period.
 
-- predictor climate fields;
-- target anomaly field;
-- cross-climate-model generalization;
-- climate-model-to-observation generalization;
-- held-out GCM or ensemble member.
-
-Use ML terms such as `domain adaptation` or `domain generalization` when naming the actual ML method or literature. Do not let the abstraction replace the atmospheric description of which GCM, reanalysis, observation set, predictor field, or target field is being compared.
+Use ML terms such as `domain adaptation` or `domain generalization` when naming the actual ML method or literature. Do not let the abstraction replace the atmospheric description of the data being compared.
 
 ## Interpretation
 
@@ -70,4 +56,4 @@ Do not turn predictive association or a diagnostic into a physical or mechanisti
 
 State sign, radius, normalization, coordinate, latitude-order, longitude, spectral-range, and zero-mode conventions when they are needed to interpret a result. Do not hide them behind phrases such as `standard convention` when multiple atmospheric conventions exist.
 
-When comparing implementations, name the implementation and version or reference method. NCL, SPHEREPACK, TRACK, pyspharm, or another package can be a parity/reference implementation without being scientific ground truth.
+When comparing implementations, identify the implementation or reference method precisely enough that the comparison is reproducible. A reference implementation is not automatically scientific ground truth.

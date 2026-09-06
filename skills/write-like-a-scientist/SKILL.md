@@ -13,7 +13,7 @@ The core rules below always apply. Before writing, decide whether one profile an
 
 ### Profiles
 
-Read `profiles/research-software.md` for README text, user or developer documentation, API descriptions, comments, docstrings, software plans, research-software papers, and other prose about scientific software.
+Read `profiles/research-software.md` for README text, user or developer documentation, API descriptions, comments, docstrings, software plans, research-software papers, and other writing about scientific software.
 
 Additional profiles may be added later. Do not invent or load a profile that is not present.
 
@@ -37,15 +37,15 @@ Do not open with commentary about the document, the agent, the project structure
 
 Prefer:
 
-> spharmgrid supports full rectangular GL and CC grids.
+> The package supports global rectangular grids.
 
 over:
 
-> The initial scope is deliberately limited to full rectangular GL and CC grids.
+> The initial scope is deliberately limited to global rectangular grids.
 
 Prefer:
 
-> The analysis compares held-out GCMs with ERA5.
+> The analysis compares the held-out data with the reference dataset.
 
 instead of explaining that the comparison was intentionally chosen or designed to provide a robust evaluation unless that design choice is itself scientifically important.
 
@@ -68,12 +68,7 @@ State the behavior or scientific reason instead.
 
 Avoid development-story language when the history is not the subject. Common warning terms include `historical`, `lineage`, `provenance`, `heritage`, `evolution`, `legacy`, `retained`, and `originally`.
 
-If the time or source relationship matters, name it precisely:
-
-- `TRACK 1.5.4 behavior`
-- `the 1989 source`
-- `the earlier implementation`
-- `the released v0.5 algorithm`
+If the time or source relationship matters, name it precisely, for example `the 1989 source`, `the earlier implementation`, or `version 2.1 behavior`.
 
 Use `historical` when something is actually a historical source, reconstruction, period, or comparison. Do not use it as decoration for an implementation detail.
 
@@ -104,7 +99,7 @@ Keep separate:
 
 - a published method or claim;
 - behavior of an external implementation;
-- behavior tested in the current repository;
+- behavior tested in the current work;
 - a measured result;
 - an estimate or expectation;
 - an interpretation or hypothesis;
@@ -118,11 +113,11 @@ Do not claim parity, accuracy, performance, superiority, robustness, generalizat
 
 Words such as `robust`, `seamless`, `comprehensive`, `sophisticated`, `high-quality`, `modern`, `clean`, and `high-performance` need a specific meaning or measurement. Otherwise remove them and describe the property that matters.
 
-Prefer:
+Prefer a measured statement such as:
 
-> The benchmark processes 360 time steps in 12 s on ...
+> The benchmark processes 360 time steps in 12 s on the tested system.
 
-or:
+or a bounded statement such as:
 
 > The solver converges for the tested parameter range.
 
@@ -177,15 +172,15 @@ Avoid:
 
 Prefer:
 
-> Operations are available through the `.sg` accessor and as functions.
+> Operations are available through the accessor and as functions.
 
 Avoid:
 
-> The package intentionally retains the historical TRACK behavior.
+> The package intentionally retains the historical behavior of an earlier implementation.
 
 Prefer, when accurate:
 
-> This matches TRACK 1.5.4 behavior.
+> This matches the earlier implementation.
 
 Avoid:
 
@@ -197,7 +192,7 @@ Prefer:
 
 Avoid:
 
-> The current phase focuses on atmospheric diagnostics, while future work will extend the framework to additional capabilities.
+> The current phase focuses on diagnostics, while future work will extend the framework to additional capabilities.
 
 Prefer describing the implemented capabilities. Put plans in a plan or roadmap when the reader actually needs them.
 
