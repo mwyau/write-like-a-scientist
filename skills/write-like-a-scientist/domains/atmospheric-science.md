@@ -1,6 +1,6 @@
 # Atmospheric science
 
-Load this domain for atmospheric science, meteorology, climate dynamics/modeling, cyclone and storm-track research, atmospheric spherical harmonics, and closely related climate-ML work.
+Load this domain for atmospheric science, meteorology, climate dynamics and modeling, cyclone and storm-track research, atmospheric spherical harmonics, and machine learning in atmospheric and climate science.
 
 Apply the core `write-like-a-scientist` rules first. Use project-local terminology when it is more specific.
 
@@ -26,9 +26,9 @@ Keep established quantities and methods when they are what the work actually use
 
 Do not replace a standard atmospheric term with generic software, ML, or statistical wording merely to avoid repetition.
 
-Name the actual atmospheric quantity when it is known: temperature, precipitation, pressure, wind, geopotential height, vorticity, or another field is usually more informative than `feature`, `signal`, `channel`, or `component` in scientific prose. Those generic terms remain appropriate when they refer to real model features, channels, or mathematical components.
+Name the actual atmospheric quantity when it is known: temperature, precipitation, pressure, wind, geopotential height, vorticity, or another field is usually more informative than `feature`, `signal`, `channel`, or `component` in scientific writing. Those generic terms remain appropriate when they refer to real model features, channels, or mathematical components.
 
-Prefer `climate model` or `GCM` to `simulator` in atmospheric prose unless simulation methodology itself is the subject.
+Prefer `climate model` or `GCM` to `simulator` in atmospheric writing unless simulation methodology itself is the subject.
 
 ## Preserve method names
 
@@ -50,7 +50,7 @@ Keep distinct:
 
 - predictive skill;
 - attribution or saliency;
-- probe/decodability results;
+- probe or decodability results;
 - representation similarity;
 - intervention, perturbation, or removal tests.
 

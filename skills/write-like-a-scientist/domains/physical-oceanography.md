@@ -1,6 +1,6 @@
 # Physical oceanography
 
-Load this domain for physical oceanography, ocean and coastal waves, sea level, tides, circulation, rotating/stratified fluids, and related geophysical-fluid problems.
+Load this domain for physical oceanography, ocean and coastal waves, sea level, tides, circulation, rotating or stratified fluids, and related geophysical fluid dynamics.
 
 Apply the core `write-like-a-scientist` rules first. Use project-local notation and terminology when it is more specific.
 
@@ -12,7 +12,8 @@ Use the quantity or process that the analysis actually describes. Examples inclu
 - tide or tidal signal;
 - current and velocity;
 - seiche;
-- surface, internal, barotropic, and baroclinic modes or waves when those distinctions apply;
+- surface and internal waves;
+- barotropic and baroclinic modes;
 - mixed layer and thermocline;
 - isopycnal and potential density;
 - geostrophic balance or geostrophic flow;
@@ -36,7 +37,7 @@ Do not replace these with generic phrases such as `ocean signal`, `feature`, `co
 Ocean-wave and coastal calculations often depend on sign and coordinate choices. State the relevant convention rather than implying that there is only one standard choice:
 
 - coordinate orientation;
-- Fourier/sign convention;
+- Fourier or sign convention;
 - positive frequency or wavenumber convention;
 - phase and propagation direction;
 - vertical coordinate;
@@ -44,7 +45,7 @@ Ocean-wave and coastal calculations often depend on sign and coordinate choices.
 - boundary condition;
 - mode normalization.
 
-Keep equations and nearby prose consistent with the same symbols and conventions.
+Keep equations and nearby text consistent with the same symbols and conventions.
 
 ## Separate source reproduction from scientific interpretation
 

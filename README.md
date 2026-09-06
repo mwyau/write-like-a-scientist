@@ -2,7 +2,7 @@
 
 I got annoyed by agents constantly writing things like “historically,” “intentionally,” “deliberately,” “retained,” and “lineage.” This is my skill for making them write more like a scientist.
 
-The skill is opinionated. It is not meant to be a general academic-writing or “humanizer” guide.
+These are my writing rules, not a general academic-writing or “humanizer” guide.
 
 ## Structure
 
@@ -11,6 +11,7 @@ There is one skill:
 ```text
 skills/write-like-a-scientist/
 ├── SKILL.md
+├── LICENSE.txt
 ├── profiles/
 │   └── research-software.md
 └── domains/

@@ -1,6 +1,6 @@
 # Research software
 
-Load this profile for README text, documentation, API descriptions, examples, comments, docstrings, design/plan documents, and software-paper text about research software.
+Load this profile for README text, documentation, API descriptions, examples, comments, docstrings, design or plan documents, and software-paper text about research software.
 
 Apply the core `write-like-a-scientist` rules first.
 
@@ -16,7 +16,7 @@ Keep README text easy to scan. Put detailed methods and reference material in th
 
 Prefer positive statements of supported behavior:
 
-> The package supports global rectangular grids.
+> The library reads NetCDF files and returns labeled arrays.
 
 Mention unsupported behavior when it prevents a likely mistake or defines an important scientific boundary. Do not enumerate absent features merely to make the scope sound controlled.
 
@@ -43,9 +43,9 @@ A cross-reference should support a scientific or technical statement, not replac
 
 Use function, class, module, accessor, command, or file names when those are the useful facts.
 
-Prefer:
+Prefer a concrete statement such as:
 
-> Operations are available through the accessor and as functions.
+> The Python API provides `analyze()` and `compare()`; the command-line interface provides the same operations for files.
 
 Do not add a paragraph explaining that one interface is primary, another is equivalent, both share a numerical path, or an accessor is thin unless that fact matters to use or interpretation.
 
@@ -53,7 +53,7 @@ Avoid meta-API terms such as `surface`, `promotion`, `importability`, or `compat
 
 ## Keep software abstractions tied to real objects
 
-Terms such as `pipeline`, `framework`, `architecture`, `backend`, `protocol`, `layer`, and `hierarchy` are useful when they name a real software concept. Do not use them merely to make an implementation description sound systematic.
+Terms such as `pipeline`, `framework`, `architecture`, `backend`, `protocol`, `layer`, `contract`, `surface`, and `hierarchy` are useful when they name a real software concept. Do not use them merely to make an implementation description sound systematic.
 
 Prefer, when accurate:
 
@@ -62,6 +62,8 @@ Prefer, when accurate:
 - `analysis` or `check` to `audit`;
 - `method` or the exact method name to `framework`;
 - `implementation` to `execution layer`.
+
+Use terms such as `backend abstraction`, `execution layer`, or `API contract` only when discussing those actual software concepts.
 
 ## Comments and docstrings
 
@@ -104,7 +106,7 @@ Verify literature-derived formulas and terminology against primary scientific so
 
 ## Plans and maintainer documents
 
-Agent instructions and operational plans may use imperative language, repository paths, status markers, ownership/routing rules, and implementation vocabulary when those are genuinely useful. Do not copy that register into researcher-facing documentation.
+Agent instructions and operational plans may use imperative language, repository paths, status markers, ownership or routing rules, and implementation vocabulary when those are genuinely useful. Do not copy that register into researcher-facing documentation.
 
 A plan should still avoid filler and inflated wording. State the task, scientific constraint, evidence gate, or implementation step directly.
 
@@ -112,21 +114,21 @@ A plan should still avoid filler and inflated wording. State the task, scientifi
 
 Avoid:
 
-> The accessor is the primary interface; each operation has an equivalent direct function.
+> The primary interface is the Python API, while the CLI is retained as an equivalent compatibility surface.
 
 Prefer:
 
-> Operations are available through the accessor and as functions.
+> The package provides a Python API and a command-line interface.
 
 Avoid:
 
-> The initial scope is deliberately limited to the supported grid types and does not reinterpret other grids.
+> The initial scope is deliberately limited to the supported input formats and does not reinterpret unsupported files.
 
 Prefer, when sufficient:
 
-> The package supports the listed grid types.
+> The package reads NetCDF and Zarr data.
 
-Add a restriction separately only where a user could otherwise supply invalid input.
+Add an input restriction separately only where a user could otherwise supply invalid data.
 
 Avoid:
 
