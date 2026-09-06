@@ -31,6 +31,14 @@ Avoid phrases such as:
 
 Plans belong in plans. User documentation describes the software the user has.
 
+## Keep durable documentation about the work, not the work log
+
+Put the current conclusion, method, rule, or design before supporting detail. Preserve concise rationale when it is needed for reproduction, scientific interpretation, or to prevent a likely future mistake.
+
+Do not preserve chat transcripts, scratch reasoning, progress narration, migration stories, obsolete alternatives, or every intermediate decision as user documentation.
+
+A cross-reference should support a scientific or technical statement, not replace it. Explain the point first, then link to the detailed method or reference when useful.
+
 ## Name the API instead of narrating its organization
 
 Use function, class, module, accessor, command, or file names when those are the useful facts.
@@ -83,6 +91,8 @@ Distinguish:
 `Tests pass` does not mean `scientifically validated`. A parity test does not make the comparison implementation scientific ground truth.
 
 State the comparison and evidence for claims about parity, accuracy, speed, scalability, robustness, or correctness.
+
+Name scientific reference material by its role: `analytic field`, `analytic solution`, `reference data`, `reference output`, or the identified comparison implementation. Avoid calling scientific reference data an `oracle` unless it is genuinely an oracle in the technical sense. Use `fixture` for the testing mechanism when appropriate, not as a substitute for the scientific identity of the data.
 
 ## Methods and references
 

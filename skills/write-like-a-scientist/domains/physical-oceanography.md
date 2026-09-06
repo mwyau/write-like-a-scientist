@@ -13,7 +13,14 @@ Use the quantity or process that the analysis actually describes. Examples inclu
 - current and velocity;
 - seiche;
 - surface, internal, barotropic, and baroclinic modes or waves when those distinctions apply;
+- mixed layer and thermocline;
+- isopycnal and potential density;
+- geostrophic balance or geostrophic flow;
+- Ekman transport;
+- overturning circulation;
+- bathymetry;
 - rotation and stratification;
+- buoyancy frequency;
 - frequency and wavenumber;
 - phase velocity and group velocity;
 - equivalent depth;

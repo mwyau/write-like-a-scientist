@@ -81,7 +81,8 @@ Prefer a short common word when it carries the same meaning:
 - `earlier` or `source` rather than `historical` when that is the actual meaning;
 - `analysis`, `check`, or `comparison` rather than `audit` when no formal audit is occurring;
 - `method` or the method name rather than `framework` when there is no framework;
-- `sequence` or `stages` rather than `hierarchy` when no nested hierarchy matters.
+- `sequence` or `stages` rather than `hierarchy` when no nested hierarchy matters;
+- `existing literature`, `related work`, or `published precedent` rather than `prior art` outside a legal or patent context.
 
 Do not simplify established scientific, mathematical, statistical, or software terminology merely to use plainer words.
 
@@ -92,6 +93,16 @@ Use the exact method, quantity, data source, model, coordinate, or physical proc
 Do not relabel a fitted or published method as a related method family because the latter sounds more general. If a mathematical relationship is worth noting, state the relationship while keeping the name of the method actually used.
 
 Avoid `-style` when the exact method, model, package, or operation can be named.
+
+Expand an uncommon acronym on first use. Do not create an acronym that appears only a few times when the full term is clearer.
+
+Use an equation or standard notation when it states a scientific definition or relationship more precisely than a longer verbal paraphrase. Do not add prose that merely repeats the equation.
+
+### Keep the science unchanged while editing style
+
+A writing cleanup is not permission to change the science. Preserve numbers, units, signs, equations, notation, method names, data relationships, uncertainty, scope, and the strength of claims unless the task explicitly asks for a substantive correction.
+
+If the text appears scientifically wrong, separate that issue from the style edit. Follow the project's correction or source-fidelity rules rather than silently rewriting the content into what it seems to have meant.
 
 ### Distinguish evidence from interpretation
 
@@ -203,7 +214,9 @@ Before returning or committing scientific text, check:
 - Does each paragraph begin with the scientific or technical subject rather than meta-commentary?
 - Can any intent adverb, inflated adjective, or abstract software noun be removed without losing meaning?
 - Are established method and domain terms preserved?
+- Are uncommon acronyms expanded when needed rather than invented for convenience?
 - Are claims no stronger than their evidence?
 - Did project-management or agent language leak into reader-facing text?
 - Did the revision become longer merely because it was polished?
+- Did the style edit leave scientific content, equations, numbers, units, and claim strength unchanged unless a substantive change was requested?
 - Were quotations, equations, names, and source wording left alone unless the task required changing them?

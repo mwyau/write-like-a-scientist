@@ -19,7 +19,7 @@ When adding guidance:
 
 - Prefer a recurring writing principle over a long list of banned words.
 - Treat warning words as context dependent. Keep them when they are the precise scientific or technical term.
-- Prefer examples drawn from real scientific or research-software writing problems.
+- Keep examples generic when possible. Do not make a personal project, repository, package, paper, or version-specific implementation part of the reusable house style.
 - Keep the core rules general. Move guidance that applies only to one writing context into a profile and guidance that applies only to one field into a domain.
 - Do not turn a domain file into a textbook or glossary. Include terminology only when it changes how an agent should write.
 - Do not add project-management machinery, installers, tests, or CI unless the repository develops a real need for them.
