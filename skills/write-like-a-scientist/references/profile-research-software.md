@@ -45,7 +45,7 @@ Use function, class, module, accessor, command, or file names when those are the
 
 Prefer a concrete statement such as:
 
-> The Python API provides `analyze()` and `compare()`; the command-line interface provides the same operations for files.
+> The Python API includes `analyze()` and `compare()`; the command-line interface exposes the same operations for files.
 
 Do not add a paragraph explaining that one interface is primary, another is equivalent, both share a numerical path, or an accessor is thin unless that fact matters to use or interpretation.
 
@@ -100,7 +100,7 @@ Name scientific reference material by its role: `analytic field`, `analytic solu
 
 Keep the exact scientific method name. Do not replace a cited method with an approximation while retaining the name.
 
-When a software dependency supplies numerical machinery for a scientific operation, say so directly rather than implying that a wrapper implements the underlying numerical method itself.
+When a software dependency performs the numerical work for a scientific operation, name that operation directly. For example, write `DUCC0 performs the spherical harmonic transforms` rather than saying the dependency `supplies` or `provides` numerical machinery.
 
 Verify literature-derived formulas and terminology against primary scientific sources when practical. Verify bibliographic details against a publisher or another authoritative record.
 
@@ -118,7 +118,7 @@ Avoid:
 
 Prefer:
 
-> The package provides a Python API and a command-line interface.
+> The package has a Python API and a command-line interface.
 
 Avoid:
 
