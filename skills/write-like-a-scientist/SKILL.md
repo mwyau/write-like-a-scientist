@@ -90,7 +90,7 @@ Avoid vague service verbs such as `provide`, `supply`, `offer`, `deliver`, and `
 
 For example:
 
-- `DUCC0 performs the spherical harmonic transforms` rather than `DUCC0 supplies the spherical harmonic transforms`;
+- `DUCC performs the spherical harmonic transforms` rather than `DUCC supplies the spherical harmonic transforms`;
 - `the package implements filtering and regridding` rather than `the package provides filtering and regridding`;
 - `the function returns metadata` rather than `the function provides metadata`.
 
