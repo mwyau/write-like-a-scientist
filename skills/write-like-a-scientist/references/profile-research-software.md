@@ -100,7 +100,7 @@ Name scientific reference material by its role: `analytic field`, `analytic solu
 
 Keep the exact scientific method name. Do not replace a cited method with an approximation while retaining the name.
 
-When a software dependency performs the numerical work for a scientific operation, name that operation directly. For example, write `DUCC0 performs the spherical harmonic transforms` rather than saying the dependency `supplies` or `provides` numerical machinery.
+When a software dependency performs the numerical work for a scientific operation, name that operation directly. For example, write `the library computes the transform` rather than saying it `provides numerical machinery`.
 
 Verify literature-derived formulas and terminology against primary scientific sources when practical. Verify bibliographic details against a publisher or another authoritative record.
 
