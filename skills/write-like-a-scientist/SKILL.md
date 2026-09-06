@@ -84,28 +84,13 @@ Prefer a short common word when it carries the same meaning:
 
 Do not simplify established scientific, mathematical, statistical, or software terminology merely to use plainer words.
 
-### Prefer verbs that name the operation
+### Prefer concrete verbs
 
-Avoid vague service verbs such as `provide`, `supply`, `offer`, `deliver`, and `support` when a more specific verb states what the subject does.
+Avoid vague verbs such as `provide`, `supply`, `offer`, and `deliver` when a specific verb is clearer. Prefer `the function returns metadata` to `the function provides metadata`, or `xarray preserves labeled coordinates` to `xarray provides labeled coordinates`.
 
-For example:
+### Avoid slogan-like compounds
 
-- `DUCC performs the spherical harmonic transforms` rather than `DUCC supplies the spherical harmonic transforms`;
-- `the package implements filtering and regridding` rather than `the package provides filtering and regridding`;
-- `the function returns metadata` rather than `the function provides metadata`.
-
-These words are not banned when they have their literal meaning. Keep `support`, for example, when describing an actually supported platform, format, grid, or Python version.
-
-### Avoid slogan-like compound modifiers
-
-Avoid promotional shorthand such as `xarray-first`, `science-first`, `production-ready`, and similar compounds when an ordinary statement is clearer.
-
-Prefer:
-
-- `uses xarray objects` or `is built around xarray objects` rather than `xarray-first`;
-- `intended for atmospheric-science workflows` rather than `science-first`.
-
-Use established technical compounds normally. This rule targets slogan-like modifiers, not necessary terms such as `band-pass`, `degree-zero`, or `command-line`.
+Avoid shorthand such as `xarray-first`, `science-first`, and `production-ready` when an ordinary statement is clearer. State the behavior instead, for example `uses xarray objects`.
 
 ### Keep the field's terminology
 
@@ -184,15 +169,7 @@ State the actual behavior, method, or evidence first. Mention an exclusion when 
 
 ### Use punctuation that the target format renders
 
-Do not rely on TeX-style `--` or `---` in Markdown for en or em dashes. GitHub Markdown does not convert them typographically.
-
-Use the actual character when punctuation is needed:
-
-- en dash: `Gauss–Legendre`, `Sardeshmukh–Hoskins`, `6–42`;
-- em dash: `—` for a parenthetical break;
-- hyphen: `-` for ordinary compound words and command-line options.
-
-Preserve literal ASCII punctuation inside code, commands, identifiers, and source quotations.
+In Markdown, use actual en and em dashes rather than TeX-style `--` or `---`. Preserve literal ASCII punctuation in code, commands, identifiers, and quotations.
 
 ### Keep writing proportional to the content
 
@@ -235,12 +212,12 @@ Prefer describing the analysis that exists. Put planned work where the reader ac
 Before returning or committing scientific text, check:
 
 - Does each paragraph begin with the scientific or technical subject rather than meta-commentary?
-- Can any intent adverb, inflated adjective, abstract noun, vague service verb, or slogan-like compound be removed without losing meaning?
+- Can any intent adverb, inflated adjective, abstract noun, vague verb, or slogan-like compound be removed without losing meaning?
 - Are established method and domain terms preserved?
 - Are uncommon acronyms expanded when needed rather than invented for convenience?
 - Are claims no stronger than their evidence?
 - Did project-management or agent language leak into reader-facing text?
-- Does Markdown use actual en/em dashes rather than TeX-style `--`/`---` punctuation?
+- Does Markdown use actual en/em dashes rather than TeX-style punctuation?
 - Did the revision become longer merely because it was polished?
 - Did the style edit leave scientific content, equations, numbers, units, and claim strength unchanged unless a substantive change was requested?
 - Were quotations, equations, names, and source wording left alone unless the task required changing them?
