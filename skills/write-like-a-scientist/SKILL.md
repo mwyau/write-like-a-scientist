@@ -1,6 +1,6 @@
 ---
 name: write-like-a-scientist
-description: Write or revise scientific and technical text in a direct researcher voice. Use for scientific explanations, research documentation, papers, software documentation, comments, docstrings, plans, reviews, and related text when the writing should preserve scientific terminology and avoid generic agent, marketing, or project-management language. Load only the relevant profile and domain references.
+description: Write or revise scientific and technical text in a direct researcher voice. Use for scientific explanations, research documentation, papers, software documentation, professional posts, comments, docstrings, plans, reviews, and related text when the writing should preserve scientific terminology and avoid generic agent, marketing, or project-management language. Load only the relevant profile and domain references.
 license: MIT. See LICENSE.txt for complete terms.
 metadata:
   author: "Albert Yau"
@@ -19,7 +19,9 @@ The core rules below always apply. Before writing, decide whether one profile an
 
 Read `references/profile-research-software.md` for README text, user or developer documentation, API descriptions, comments, docstrings, software plans, research-software papers, and other writing about scientific software.
 
-Additional profiles may be added later. Do not invent or load a profile that is not present.
+Read `references/profile-linkedin-post.md` for LinkedIn posts about scientific research, research software, technical projects, publications, or related professional work.
+
+Do not invent or load a profile that is not present.
 
 ### Domains
 
